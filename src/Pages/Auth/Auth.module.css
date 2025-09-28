@@ -1,0 +1,116 @@
+
+.auth {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; /* vertical center */
+  min-height: 10vh;
+  background-color: #fff;
+  font-family: Arial, sans-serif;
+}
+
+/* Amazon logo */
+.logo {
+  margin-bottom: 20px;
+  width: 120px;
+  cursor: pointer;
+  object-fit: contain;
+}
+
+/* Form container */
+.formContainer {
+  width: 350px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  background: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.formContainer h1 {
+  font-weight: 500;
+  margin-bottom: 20px;
+  font-size: 22px;
+}
+
+/* Form fields */
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-size: 13px;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input {
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 1px solid #a6a6a6;
+  border-radius: 3px;
+  font-size: 14px;
+  transition: all 0.2s ease;
+}
+
+/* Input focus effect */
+input:focus {
+  outline: none;
+  border-color: #e77600;
+  box-shadow: 0 0 3px 2px rgba(228, 121, 17, 0.3);
+}
+
+/* Yellow Amazon-style button */
+.authButton {
+  background: #f0c14b;
+  border: 1px solid #a88734;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 3px;
+  font-size: 14px;
+  font-weight: bold;
+  transition: background 0.2s ease;
+}
+
+.authButton:hover {
+  background: #e2b33c;
+}
+
+/* Toggle button (secondary) */
+.toggleButton {
+  margin-top: 15px;
+  background: #e7e9ec;
+  border: 1px solid #adb1b8;
+  padding: 10px;
+  border-radius: 3px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.toggleButton:hover {
+  background: #d7d9dc;
+}
+
+/* Terms text */
+.terms {
+  font-size: 12px;
+  margin-top: 15px;
+  color: #111;
+  line-height: 1.5;
+}
+
+.terms span {
+  color: #0066c0;
+  cursor: pointer;
+}
+
+.terms span:hover {
+  text-decoration: underline;
+}
+.error {
+  color: red;
+  font-size: 13px;
+  margin-top: 10px;
+  text-align: center;
+}

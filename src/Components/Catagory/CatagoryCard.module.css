@@ -1,0 +1,54 @@
+/* src/components/Category/CategoryCard.module.css */
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  padding: 20px;
+  transition: transform 0.2s ease-in-out;
+  cursor: pointer;
+  min-height: 300px; /* bigger card */
+  text-decoration: none; /* remove underline from Link */
+  color: inherit; /* prevent purple/blue link colors */
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.image {
+  width: 100%;
+  height: 200px;
+  object-fit: contain; /* fit image fully inside container */
+  border-radius: 10px;
+  background-color: #f5f5f5; /* optional: light background for empty space */
+}
+
+
+.title {
+  margin-top: 14px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #111;
+  text-align: center;
+}
+
+.button {
+  margin-top: 12px;
+  background: #ffd814; /* Amazon yellow */
+  color: #111;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 8px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s;
+  text-decoration: none; /* remove underline from Link */
+}
+
+.button:hover {
+  background: #f7ca00; /* darker Amazon yellow */
+}

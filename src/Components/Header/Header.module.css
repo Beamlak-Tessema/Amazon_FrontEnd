@@ -1,0 +1,170 @@
+/* ---------------------- Main Header ---------------------- */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #131921;
+  color: white;
+  padding: 10px 20px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  flex-wrap: wrap;
+  overflow: visible; 
+}
+
+.logo {
+  width: 100px;
+  flex-shrink: 0;
+  cursor: pointer;
+}
+
+/* Deliver To */
+.deliver {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  gap: 4px;
+}
+
+.locationIcon {
+  font-size: 18px;
+}
+
+.deliverText {
+  display: flex;
+  flex-direction: column;
+}
+
+.deliverLineOne {
+  font-size: 11px;
+  color: #ccc;
+}
+
+.deliverLineTwo {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+/* Search Bar */
+.search {
+  display: flex;
+  flex: 1 1 auto;
+  max-width: 600px;
+  border-radius: 5px;
+  overflow: hidden;
+  background-color: white;
+  margin: 0 10px;
+}
+
+.searchCategory {
+  background: #e6e6e6;
+  padding: 6px 8px;
+  font-size: 12px;
+  border: none;
+  outline: none;
+  min-width: 60px;
+}
+
+.searchInput {
+  flex: 1;
+  padding: 0 10px;
+  border: none;
+  outline: none;
+  font-size: 14px;
+}
+
+.searchIcon {
+  padding: 8px;
+  background-color: #febd69;
+  cursor: pointer;
+}
+
+/* Language Selector */
+.languageContainer {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  gap: 5px;
+  flex-shrink: 0;
+  position: relative; /* ensure dropdown anchors here */
+}
+
+.flagStatic {
+  width: 25px;
+  height: 18px;
+  object-fit: cover;
+  border: 1px solid #fff;
+}
+
+.languageSelected {
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.languageSelected svg {
+  margin-left: 5px;
+  font-size: 12px;
+}
+
+/* Dropdown menu */
+.dropdown {
+  position: absolute;
+  top: 100%;      /* directly below container */
+  left: 0;
+  background: white;
+  color: black;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 4px 0;
+  min-width: 80px;
+  z-index: 1004;
+}
+
+.dropdownItem {
+  padding: 6px 12px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.dropdownItem:hover {
+  background-color: #f0f0f0;
+}
+
+/* Nav Items */
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.option {
+  display: flex;
+  flex-direction: column;
+  font-size: 12px;
+  color: inherit; /* stay white */
+  text-decoration: none;
+}
+
+.optionLineOne {
+  color: #ccc;
+}
+
+.optionLineTwo {
+  font-weight: 800;
+  font-size: 13px;
+}
+
+.optionBasket {
+  display: flex;
+  align-items: center;
+}
+
+.basketCount {
+  margin-left: 5px;
+  font-weight: bold;
+  color: #febd69;
+}

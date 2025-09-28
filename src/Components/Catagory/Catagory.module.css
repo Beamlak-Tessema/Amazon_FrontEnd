@@ -1,0 +1,39 @@
+/* src/components/Category/Category.module.css */
+.container {
+  position: relative;           
+  margin: -180px auto 0 auto;   /* increased negative top margin for more overlay */
+  width: 90%;
+  max-width: 1400px;
+  padding: 20px;
+  z-index: 2;                   
+  background: transparent;       
+}
+
+
+.heading {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 24px;
+  text-align: left;
+  color: #111;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 cards per row desktop */
+  gap: 24px;
+}
+
+/* Tablet */
+@media (max-width: 1024px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
