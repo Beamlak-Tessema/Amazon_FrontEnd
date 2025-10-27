@@ -11,6 +11,9 @@ import {
 import { useData } from "../DataProvider/DataProvider";
 import { auth } from "../../Utility/firebase";
 import { signOut } from "firebase/auth";
+import amazonLogo from "../../assets/amazon_Header.png";
+import usFlag from "../../assets/us_flag.png";
+
 
 const Header = () => {
   const [langOpen, setLangOpen] = useState(false);
@@ -47,11 +50,7 @@ const Header = () => {
     <div className={styles.header}>
       {/* Logo */}
       <Link to="/">
-        <img
-          className={styles.logo}
-          src="src/assets/amazon_Header.png"
-          alt="Amazon Logo"
-        />
+        <img className={styles.logo} src={amazonLogo} alt="Amazon Logo" />
       </Link>
 
       {/* Deliver to */}
@@ -89,11 +88,7 @@ const Header = () => {
         className={styles.languageContainer}
         onClick={() => setLangOpen(!langOpen)}
       >
-        <img
-          className={styles.flagStatic}
-          src="src/assets/us_flag.png"
-          alt="USA Flag"
-        />
+        <img className={styles.flagStatic} src={usFlag} alt="USA Flag" />
         <div className={styles.languageSelected}>
           {selectedLang} <FaChevronDown />
         </div>

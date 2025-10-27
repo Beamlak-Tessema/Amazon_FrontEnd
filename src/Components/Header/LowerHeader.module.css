@@ -8,7 +8,7 @@
   flex-wrap: wrap;
 
   position: sticky;  /* make it sticky */
-  top: 60px;            /* stick to top */
+  top: 0px;            /* stick to top */
   z-index: 99;      /* above other content */
 }
 
